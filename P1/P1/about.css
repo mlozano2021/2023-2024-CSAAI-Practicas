@@ -5,7 +5,7 @@
 
   
 body {
-  background-image: url(imagenes/fondo.jpg);
+  background-image: url(fondo.jpg);
   margin: 30px;
   color: white;
   font-size: large;
@@ -29,7 +29,6 @@ button {
   padding: 5px 15px;
   color: rgb(0, 73, 208);
   background-color: rgb(218, 218, 218);
-  /*text-transform: uppercase; /*capitalización texto*/
   border-radius: 10px;
   font-size: medium;
   text-align: center;
@@ -43,7 +42,6 @@ p {
 }
 
 
-/* Crear columnas de ancho diferente que se colocan una a continuación de la otra */
 .columna {
   float: left;
   min-height: 500px;
@@ -56,7 +54,6 @@ p {
   .izquierda {
   width: 45%;
   padding: 20px;
-  /*text-align: center; */
   padding-left: 40px;
   margin-left: 50px;
 
@@ -70,7 +67,6 @@ p {
   
   }
   
-  /* Clear floats despues de las columnas para eliminar la superposición */
   .filla:after {
   content: "";
   display: table;
@@ -91,13 +87,6 @@ p {
   border-radius: 10px;
 
 }
-
-/*#gif1{
-  text-align: center;
-  margin-left: 10%;
-  display: flex;
-  border-radius: 10px;
-}*/
 
 #gif2 {
   text-align: center;
@@ -122,10 +111,9 @@ p {
 }
 
 
-/* esto lo utilizamos para que se adapte a la pantalla de movil:*/
 @media screen and (max-width: 600px) {
   body {
-    background-image: url(imagenes/fondo.jpg);
+    background-image: url(fondo.jpg);
   }
 
   .columna {
