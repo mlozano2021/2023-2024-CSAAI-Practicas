@@ -30,7 +30,10 @@ button {
     background-color: yellow;
     border-radius: 15px;
     font-size: 24px;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
