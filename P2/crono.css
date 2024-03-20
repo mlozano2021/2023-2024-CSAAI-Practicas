@@ -7,7 +7,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
     margin-bottom: 20px;
-    color: red;
+    color: green;
 }
 
 .números {
@@ -18,16 +18,16 @@ body {
 
 
 #display {
-    color: yellow;
+    color: purple;
     text-align: center;
     font-size: 30px;
 }
 
 button {
-    padding: 15px;
-    margin-top: 10px;
+    padding: 25px;
+    margin-top: 18px;
     color: red;
-    background-color: black;
+    background-color: yellow;
     border-radius: 5px;
 }
 
@@ -35,15 +35,15 @@ button {
 .teclado {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 4px;
+    gap: 8px;
     background-color: black;
 }
 .tecla {
-    padding: 18px;
-    font-size: 18px;
+    padding: 25px;
+    font-size: 24px;
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
-    background-color: green;
+    background-color: blue;
 }
