@@ -73,17 +73,17 @@ gui.reset.onclick = () => {
     crono.reset();
 }
 
-const clave = ['1', '2', '3', '4'];
-const digitosClave = document.querySelectorAll('.digitos');
+const contraseña = ['1', '2', '3', '4'];
+const numeroscontraseña = document.querySelectorAll('.números');
 
 document.querySelectorAll('.tecla').forEach(tecla => {
     tecla.addEventListener('click', function() {
         const teclaPresionada = this.textContent;
-        if (clave.includes(teclaPresionada)) {
-            const indice = clave.indexOf(teclaPresionada);
-            digitosClave[indice].textContent = teclaPresionada;
-            digitosClave[indice].style.color = 'green';
-            if (clave.join('') === Array.from(digitosClave).map(digito => digito.textContent).join('')) {
+        if (contraseña.includes(teclaPresionada)) {
+            const indice = contraseña.indexOf(teclaPresionada);
+            numeroscontraseña[indice].textContent = teclaPresionada;
+            numeroscontraseña[indice].style.color = 'green';
+            if (contraseña.join('') === Array.from(numeroscontraseña).map(digito => digito.textContent).join('')) {
                 crono.stop();
             }
         }
