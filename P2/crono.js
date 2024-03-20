@@ -73,7 +73,7 @@ gui.reset.onclick = () => {
     crono.reset();
 }
 
-const contraseña = ['1', '2', '3', '4'];
+const contraseña = ['4', '4', '4', '4'];
 const numeroscontraseña = document.querySelectorAll('.números');
 
 document.querySelectorAll('.tecla').forEach(tecla => {
