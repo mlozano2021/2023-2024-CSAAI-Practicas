@@ -22,7 +22,6 @@ button {
   padding: 5px 15px;
   color: rgb(0, 73, 208);
   background-color: rgb(218, 218, 218);
-  /*text-transform: uppercase; /*capitalización texto*/
   border-radius: 10px;
   font-size: medium;
   text-align: center;
@@ -31,7 +30,6 @@ button {
   }
 
 
-/* Crear columnas de ancho diferente que se colocan una a continuación de la otra */
 .columna {
 float: left;
 min-height: 500px;
@@ -43,7 +41,6 @@ margin-bottom: 60px;
 .izquierda {
 width: 75%;
 padding: 20px;
-/*text-align: center; */
 padding-left: 100px;
 
 }
@@ -55,7 +52,6 @@ margin-top:40px;
 
 }
 
-/* Clear floats despues de las columnas para eliminar la superposición */
 .filla:after {
 content: "";
 display: table;
@@ -67,10 +63,6 @@ clear: both;
   color: rgb(255, 255, 255);
   text-shadow: 5px 5px rgb(82, 82, 82);
   font-size: x-large;
-  /*font-family: 'Indie Flower', cursive; este me gusta más*/
-  /*font-family: "Sofia", sans-serif; */
-  /*font-family: 'Creepster', cursive;
-  font-size: 50px; */
 
 
 
@@ -102,9 +94,6 @@ clear: both;
 }
 
 
-/* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
-/* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
-
 img {
     width: 60%;
     height: auto;
@@ -118,10 +107,6 @@ img {
     width: 50%;
   }
 
-/* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
-/* Así conseguimos que el contenido se vea bien en dispositvos móviles */
-
-/* esto lo utilizamos para que se adapte a la pantalla de movil:*/
 @media screen and (max-width: 600px) {
     body {
       background-image: url(fondo.jpg);
