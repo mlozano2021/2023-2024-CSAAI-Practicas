@@ -1,6 +1,4 @@
-/* 
-Estilos para el campo de tiro
-*/  
+/* Estilo */  
 
 body {
     text-align: center;
@@ -14,20 +12,20 @@ body {
   
   
   #ctiro {
-      background-image: url(fondo.jpg);
+      background-image: url(Fondo.jpg);
       background-size: 100%;
       border-style: solid;
-      border-width: 1px;
+      border-width: 5px;
       border-color: black;
-      border-radius: 5px;
+      border-radius: 20px;
     }
   
-    /* esto lo utilizamos para que se adapte a la pantalla de movil:*/
+    /* Para la pantalla del teléfono: */
   @media screen and (max-width: 600px) {
     #ctiro {
       width: 100%;
       height: 100%;
-      background-image: url(fondo.jpg);
+      background-image: url(Fondo.jpg);
       background-size: 100%;
   
     }
