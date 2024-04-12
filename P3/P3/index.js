@@ -139,8 +139,6 @@ function lanzar()
     
 }
 
-//-- Otras funciones....
-
 //-- función para pintar el proyectil
 function dibujarP(x,y,lx,ly,pcolor) {
 
