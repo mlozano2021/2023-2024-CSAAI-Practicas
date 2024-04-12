@@ -15,7 +15,6 @@ let xomin = 200;
 let xomax = 770;
 let xo = getRandomInt(xomin, xomax);
 let yo = 370;
-//podriamos poner el radio, angulos...
 let ocolor = 'red';
 
 
@@ -29,10 +28,10 @@ const mensaje = document.getElementById("mensaje"); //Mensaje de victoria o derr
 const crono = new Crono(display);
 
 //-- Acceder al botón de disparo
-const btnLanzar = document.getElementById("btnLanzar");
+const btnLanzar = document.getElementById("botonLanzar");
 
 //-- Acceder al botón de inicio
-const btnIniciar = document.getElementById("btnIniciar");
+const btnIniciar = document.getElementById("botonIniciar");
 
 //-- Obtención del canvas y de los elementos HTML a usar
 const canvas = document.getElementById("ctiro");
