@@ -197,13 +197,13 @@ function getRandomInt(min, max) {
 
 
 //-- Función de retrollamada del botón de disparo
-btnLanzar.onclick = () => {
+botonLanzar.onclick = () => {
     lanzar();
     crono.start();
 }
 
 //-- Función de retrollamada del botón iniciar
-btnIniciar.onclick = () => {
+botonIniciar.onclick = () => {
     location.reload();
     crono.stop();
     crono.reset();
