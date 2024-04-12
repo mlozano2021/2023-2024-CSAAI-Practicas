@@ -11,8 +11,8 @@ let ldy = 55;
 let pcolor = 'blue' 
 
 //Coordenadas del objetivo
-let xomin = 225;
-let xomax = 775;
+let xomin = 240;
+let xomax = 820;
 let xo = getRandomInt(xomin, xomax);
 let yo = 370;
 let ocolor = 'red';
