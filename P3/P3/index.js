@@ -28,10 +28,10 @@ const mensaje = document.getElementById("mensaje"); //Mensaje de victoria o derr
 const crono = new Crono(display);
 
 //-- Acceder al botón de disparo
-const btnLanzar = document.getElementById("botonLanzar");
+const botonLanzar = document.getElementById("botonLanzar");
 
 //-- Acceder al botón de inicio
-const btnIniciar = document.getElementById("botonIniciar");
+const botonIniciar = document.getElementById("botonIniciar");
 
 //-- Obtención del canvas y de los elementos HTML a usar
 const canvas = document.getElementById("ctiro");
