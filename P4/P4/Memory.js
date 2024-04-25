@@ -53,19 +53,18 @@ const generateGame = () => {
     }
 
     //Imágenes que utilizaremos
-    const imagenes = ['RealMadrid.png', 'Barcelona.png', 'AtleticoDeMadrid.png', 'Betis.png', 'Getafe.png', 'Girona.png','Mallorca.png' ,'RayoVallecano.png','RealSociedad.png','Villareal.png']
-
-    const picks = pickRandom(imagenes, (dimensions * dimensions) / 2)
+    const emojis = ['🥔', '🍒', '🥑', '🌽', '🥕', '🍇', '🍉', '🍌', '🥭', '🍍', '🍎', '🍐', '🍊', '🍓', '🫐', '🥥', '🫒', '🍈']
     
+    const picks = pickRandom(emojis, (dimensions * dimensions) / 2)
+
     const items = shuffle([...picks, ...picks])
     
-    //Colocar las imágenes en el tablero
     const cards = `
-        <div class="tablero" style="grid-template-columns: repeat(${dimensions}, auto)" grid-dimension="4">
+        <div class="tablero" style="grid-template-columns: repeat(${dimensions}, auto)">
             ${items.map(item => `
-                <div class="card" item-back="${item}">
+                <div class="card">
                     <div class="card-front"></div>
-                    <div class="card-back"><img src="${item}" alt="Futbol"></div>
+                    <div class="card-back">${item}</div>
                 </div>
             `).join('')}
        </div>
@@ -81,7 +80,7 @@ const pickRandom = (array, items) => {
         const randomIndex = Math.floor(Math.random() * clonedArray.length)
 
         randomPicks.push(clonedArray[randomIndex])
-        //Para no repetir imágenes en el tablero
+        //Para no repetir emojis en el tablero
         clonedArray.splice(randomIndex, 1)
     }
 
@@ -92,7 +91,7 @@ const pickRandom = (array, items) => {
 const shuffle = array => {
     const clonedArray = [...array]
 
-    //Desordenamos las imágenes que hay en el tablero aleatoriamente
+    //Desordenamos las emojis que hay en el tablero aleatoriamente
     for (let index = clonedArray.length - 1; index > 0; index--) {
         const randomIndex = Math.floor(Math.random() * (index + 1))
         const original = clonedArray[index]
