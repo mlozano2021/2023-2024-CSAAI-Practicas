@@ -52,15 +52,14 @@ const generateGame = () => {
         throw new Error("El número de dimensiones debe ser un número par mayor o igual a 2.");
     }
 
-    //Emojis que utilizaremos
-    const emojis = ['🥔', '🍒', '🥑', '🌽', '🥕', '🍇', '🍉', '🍌', '🥭', '🍍', '🍎', '🍐', '🍊', '🍓', '🫐', '🥥', '🫒', '🍈']
-    
-    
-    const picks = pickRandom(emojis, (dimensions * dimensions) / 2)
+    //Imágenes que utilizaremos
+    const imagenes = ['Real', '', '', '', '', '','' ,'','','']
+
+    const picks = pickRandom(imagenes, (dimensions * dimensions) / 2)
     
     const items = shuffle([...picks, ...picks])
     
-    //Colocar los emojis en el tablero
+    //Colocar las imágenes en el tablero
     const cards = `
         <div class="tablero" style="grid-template-columns: repeat(${dimensions}, auto)">
             ${items.map(item => `
@@ -83,7 +82,7 @@ const pickRandom = (array, items) => {
         const randomIndex = Math.floor(Math.random() * clonedArray.length)
 
         randomPicks.push(clonedArray[randomIndex])
-        //Para no repetir emojis en el tablero
+        //Para no repetir imágenes en el tablero
         clonedArray.splice(randomIndex, 1)
     }
 
@@ -94,7 +93,7 @@ const pickRandom = (array, items) => {
 const shuffle = array => {
     const clonedArray = [...array]
 
-    //Desordenamos los emojis que hay en el tablero aleatoriamente
+    //Desordenamos las imágenes que hay en el tablero aleatoriamente
     for (let index = clonedArray.length - 1; index > 0; index--) {
         const randomIndex = Math.floor(Math.random() * (index + 1))
         const original = clonedArray[index]
