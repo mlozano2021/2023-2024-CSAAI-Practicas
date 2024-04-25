@@ -53,7 +53,7 @@ const generateGame = () => {
     }
 
     //Imágenes que utilizaremos
-    const imagenes = ['Real', '', '', '', '', '','' ,'','','']
+    const imagenes = ['RealMadrid.png', 'Barcelona.png', 'AtleticoDeMadrid.png', 'Betis.png', 'Getafe.png', 'Girona.png','Mallorca.png' ,'RayoVallecano.png','RealSociedad.png','Villareal.png']
 
     const picks = pickRandom(imagenes, (dimensions * dimensions) / 2)
     
