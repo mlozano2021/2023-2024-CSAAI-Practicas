@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Nova Oval';
-    src: url(NovaOval-Regular.ttf);
+    font-family: Jersey;
+    src: url(Jersey25-Regular.ttf);
 }
 
 
@@ -10,7 +10,7 @@ h1 {
     margin-top: 40px;
     margin-left: 20px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.75);
-    font-family: 'Nova Oval';
+    font-family: Jersey;
 }
 
 body {
@@ -93,15 +93,10 @@ button {
     transform: rotateY(0) rotateZ(0);
 }
 
-@font-face {
-    font-family: Montserrat;
-    src: url(./Montserrat-Regular.ttf);
-}
-
 html {
     width: 100%;
     height: 100%;
-    font-family: Montserrat;
+    font-family: Jersey;
 }
 
 .game {
@@ -126,7 +121,7 @@ button {
     padding: 6px 12px;
     border: 0;
     cursor: pointer;
-    font-family: Fredoka;
+    font-family: Jersey;
     font-size: 14pt;
 }
 
