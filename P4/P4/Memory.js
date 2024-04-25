@@ -61,15 +61,14 @@ const generateGame = () => {
     
     //Colocar las imágenes en el tablero
     const cards = `
-        <div class="tablero" style="grid-template-columns: repeat(${dimensions}, auto)">
+        <div class="tablero" style="grid-template-columns: repeat(${dimensions}, auto)" grid-dimension="4">
             ${items.map(item => `
-                <div class="card">
+                <div class="card" item-back="${item}">
                     <div class="card-front"></div>
-                    <div class="card-back">${item}</div>
+                    <div class="card-back"><img src="${item}" alt="Futbol"></div>
                 </div>
             `).join('')}
        </div>
-    
     `
     selectors.tablero.innerHTML = cards;
 }
