@@ -1,7 +1,11 @@
 canvas {
-    border: 1px solid black;
+    border: 8px solid black;
   }
   
+  body{
+    background-color: aqua;
+  }
+
   .controls {
     display: flex;
     gap: 20px;
@@ -9,8 +13,8 @@ canvas {
   }
   
   button {
-    background: #282A3A;
-    color: #FFF;
+    background: hsl(2, 93%, 56%);
+    color: #2c1efa;
     border-radius: 2px;
     padding: 10px 20px;
     border: 0;

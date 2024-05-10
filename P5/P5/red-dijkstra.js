@@ -50,4 +50,4 @@ function dijkstraConRetardos(red, origen, destino) {
   
     // Devolver la ruta mínima como una lista de nodos
     return rutaMinima.map(id => red.find(nodo => nodo.id === id));
-}
+  }
